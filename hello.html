@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="weather.png">
+</head>
+
+<body>
+
+    <h1
+        style="text-align: center; height: 2.8rem; background-color: darkcyan; text-decoration: underline; color: rgb(218, 200, 200); font-size: 2.5rem; position:fixed; top: 0; left: 0; width: 100%;">
+        Weather app</h1>
+    <div class="container">
+        <div class="weather_container">
+            <div class="temp">
+                <p>20</p>
+            </div>
+            <div class="time_location">
+                <p id="location">Loading location...</p>
+                <p id="datetime">Loading date and time...</p>
+            </div>
+            <div class="condition">
+                <p></p>
+                <img src="weather.png" alt="" height="100px" width="90px">
+                <p>Mist</p>
+            </div>
+        </div>
+
+        <nav>
+            <form>
+                <input type="text" placeholder="Search for a location" class="Search_area" />
+                <button type="submit">Search Button</button>
+            </form>
+        </nav>
+    </div>
+    <script src="cloud.js"></script>
+</body>
+
+</html>
